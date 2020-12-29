@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title>micheleYoshida</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<div class="w3-bar" id="myNavbar">
+<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <i class="fa fa-bars"></i>
+</a>
+<a href="#home" class="w3-bar-item w3-button">HOME</a>
+<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+</div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="w3-display-middle" style="white-space:nowrap;">
+    <div class="welcome">
+        <div id="wrapper"></div>
+        <p class="f">
+        </p>
+    </div>
+</div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+<p id="hand">👋</p>
+<h3 class="w3-center">ABOUT ME</h3>
+
+<p>Empowering people is my kind of high. I provide people with the right tools and how-to guide for their self-sufficient success. Currently seeking a full-time position on a team needing a UX/UI Generalist or Front End Web Developer.</p>
+<div class="w3-row">
+<div class="w3-col m6 w3-center w3-padding-large">
+    <br/>
+    <a href="https://www.linkedin.com/in/michele-yoshida-90504"><img src="/assets/avatar.JPG" class="w3-round w3-image" alt="Photo of Me" id="avatar"></a>
+</div>
+
+<!-- Hide this text on small devices -->
+<div class="w3-col m6 w3-hide-small w3-padding-large">
+    <p>Welcome! My name is Michele Yoshida, born and raised in the beautiful South Bay of California. My passions range from anything digital to getting dirty in my veggie garden. Whenever I discover something new that interests me, I make it my business to learn anything and everything about it. Thankfully, I'm a quick study!</p>
+    <p>I love being part of a team, but also thrive on solo missions. Let's help each other to reach peak efficiency!</p>
+</div>
+</div>
+</div>
+
+
+<div class="w3-row w3-center w3-padding-16" id="offer-bar">
+
+<div class="w3-half w3-section">
+<span class="w3-xlarge">Front End</span>
+</div>
+<div class="w3-half w3-section">
+<span class="w3-xlarge">UX/UI</span>
+</div>
+
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="w3-display-middle">
+<div class="portfolio-title-box">
+<span class="w3-xxlarge w3-text-white w3-wide" id="section-name">PERSONAL PROJECTS</span>
+</div>
+</div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<!--<h3 class="w3-center">Photography | Graphic Design | Front End | UX/UI</h3>
+<p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.</em></p><br>-->
+
+<!--Responsive Cards: one row of 4. Stacks on smaller screens.-->
+<div class="w3-row-padding w3-center" id="viewport">
+<div class="w3-col m3" id="card">
+    <div>
+        <a href="https://micheleyoshidaphotography.pixieset.com/japan2019/"><img class="card_img" src="/assets/japan-2019.jpg" alt="Thumbnail of Japan Photogallery"></a>
+    </div>
+    <h1 class="emoji-header">📷</h1>
+    <h3 class="project-title">Japan 2019</h3>
+    <div class="line">
+    </div>
+    <p>A collection of travel-style photographs taken while on my most recent trip to Japan.</p>
+</div>
+<div class="w3-col m3" id="card">
+    <div class="card_img card2">
+        <a href="https://xd.adobe.com/view/92ebdcb7-0fef-4d95-8957-f38ed343f767-c7b8/?hints=off"><img class="card_img" src="/assets/ux-test.jpg" alt="Thumbnail of UX Design testing"></a>
+    </div>
+    <img class="adobe-xd-icon" src="/assets/adobe-xd.png">
+    <h3 class="project-title">UX/UI Test</h3>
+    <div class="line">
+    </div>
+    <p>Clickable prototype for user testing of a fictional anime streaming site.</p>
+</div>
+<div class="w3-col m3" id="card">
+    <div class="card_img card3">
+        <a href="https://micheleyoshi.github.io/bamboo-animation/"><img class="card_img" src="/assets/bamboo-animation.jpg" alt="Thumbnail of Bamboo CSS Animation"></a>
+    </div>
+    <img class="css-icon" src="/assets/css3-icon.png">
+    <h3 class="project-title">BAMboo</h3>
+    <div class="line">
+    </div>
+    <p>Pure CSS animation to bring a static image to life with breezy leaves. See code <a href="https://github.com/MicheleYoshi/bamboo-animation" id="code-hyperlink">here.</a></p>
+</div>
+<div class="w3-col m3" id="card">
+    <div class="card_img card4">
+        <a href="https://micheleyoshi.github.io/landing-page-01/"><img class="card_img" src="/assets/landing-page-01.jpg" alt="Thumbnail of example landing page"></a>
+    </div>
+    <img class="html-css-icon" src="/assets/html5-css3-icon.png">
+    <h3 class="project-title">Landing Page</h3>
+    <div class="line">
+    </div>
+    <p>Sample landing page for a Japanese Restaurant. See code <a href="https://github.com/MicheleYoshi/landing-page-01" id="code-hyperlink">here.</a></div>
+</div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="w3-display-middle">
+<div class="contact-title-box">
+    <span class="w3-xxlarge w3-text-white w3-wide" id="section-name">CONTACT</span>
+</div>
+</div>
+</div>
+
+<!-- CONTACT -->
+
+<section id="contact">
+<div class="contact-wrapper">
+<div class="direct-contact-container">
+<ul class="contact-list">
+    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Torrance, CA</span></i></li>
+    
+    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-310-749-8628" title="Give me a call">(310) 749-8628</a></span></i></li>
+    
+    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:michele@micheleyoshida.com" title="Send me an email">michele@micheleyoshida.com</a></span></i></li>
+    
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+<a href="#home" class="w3-button w3-light-grey">↑ back to top ↑</a>
+<div class="w3-xlarge w3-section">
+    <a href="https://github.com/MicheleYoshi" target="_blank" class="contact-icon">
+        <i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/michele-yoshida-90504/" target="_blank" class="contact-icon">
+        <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+<p id="copyright-tagline">© Michele Yoshida 2020</p>
+</footer>
+
+<script src="script.js" async defer></script>
+
+</body>
+</html>

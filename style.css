@@ -1,0 +1,498 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+height: 100%;
+color: #222;
+line-height: 1.8;
+background-color: #1d1a47;
+margin: 0;
+color: #fff8f0;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#myNavbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Randomized @micheleCodes */
+.welcome {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    font-family: monospace;
+    top: 10;
+}
+
+.f {
+position: relative;
+font-family: 'Arial';
+font-size: 0.7rem;
+color: #d7b8f3;
+text-align: center;
+}
+
+.f a {
+font-size: 0.8rem;
+color: #fff;
+}
+
+#wrapper {
+padding-left: 5px;
+padding-right: 5px;
+display: table-cell;
+vertical-align: middle;
+width: 600px;
+height: 300px;
+text-align: center;
+position: relative;
+transform: translate(-50%, -50%);
+background-color: rgba(0, 0, 0, 0.8)
+}
+
+#wrapper span,
+#wrapper p {
+margin: 0;
+font-size: 1.2em;
+line-height: 0.8em;
+}
+#wrapper span {
+position: relative;
+display: inline-block;
+width: 14px;
+height: 14px;
+text-align: center;
+color: #fff;
+}
+#wrapper span:after {
+content: '';
+background-color: #fff;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+}
+#wrapper span:hover:after {
+opacity: 1;
+}
+#wrapper span.purple {
+color: #fff;
+}
+#wrapper span.purple:hover:after {
+background-color: #fff;
+}
+
+/* Hand Animation */
+#hand {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+    animation: waving-hand 0.45s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes waving-hand {
+    from {
+        transform: rotate(40deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+background-image: url('/assets/parallax-1.jpg');
+min-height: 100%;
+}
+
+/* Avatar Image */
+#avatar {
+    opacity: 80%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#avatar:hover {
+    opacity: 100%;
+}
+
+#section-name {
+    color: white;
+    background-color: black;
+}
+
+/*Photography, Front End, UX/UI, Retouching*/
+#offer-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*PORTFOLIO TITLE*/
+.portfolio-title-box {
+    margin: 50px;
+    width: 560px;
+    height: 75px;
+    background-color: black;
+    outline: 1px solid white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*.portfolio-title-box:before, .portfolio-title-box:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #9b9b9b, #b8b8b8,#eeeeee, #ffffff, 
+		#cecece,#aaaaaa, #b6b6b6);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.portfolio-title-box:after {
+	filter: blur(50px);
+}*/
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+background-image: url("/assets/parallax-2.jpg");
+min-height: 400px;
+}
+
+/*Portfolio Cards*/
+#viewport{
+width:100%;
+-webkit-animation:   AnimationName 10s ease infinite;
+-moz-animation: AnimationName 10s ease infinite;
+animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#card {
+    padding-top: 8px;
+}
+
+#card p{
+font-family: lato;
+margin:0px;
+color: black;
+font-weight: 400;
+font-size:15px;
+line-height:120%;
+padding-left: 8%;
+padding-right: 8%;
+padding-top:3%;
+padding-bottom:8%;
+border-radius:20px;
+cursor:pointer;
+transition: ease 1s;
+-webkit-transition: ease 1s;
+}
+
+#card h3{
+font-family: lato;
+margin:0px;
+color: black;
+font-weight: 400;
+font-size:20px;
+line-height:90%;
+padding-left: 8%;
+padding-top:8%;
+padding-bottom:3%;
+border-radius:20px;
+cursor:pointer;
+transition: ease 1s;
+-webkit-transition: ease 1s;
+}
+
+h1{
+font-family: lato;
+color:white;
+font-weight: 400;
+font-size:35px;
+line-height:90%;
+padding-bottom:140px;
+padding-top:150px;
+position:relative;
+text-align:center;
+}
+
+.emoji-header {
+    text-align: center;
+    font-size: 45px;
+    padding-top: 7px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.adobe-xd-icon {
+    height: 70px;
+    padding-top: 7px;
+    padding-bottom: 0;
+}
+
+.css-icon {
+    height: 70px;
+    padding-top: 7px;
+    padding-bottom: 0;
+}
+
+.html-css-icon {
+    height: 73px;
+    padding-top: 4px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#code-hyperlink {
+    color: #8e11f3;
+}
+
+.project-title {
+width: 90%;
+position: relative;
+float: center;
+text-align: center;
+margin-top: 0;
+padding-left: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+.cards{
+width:80%;
+position:relative;
+margin-left:auto;
+margin-right:auto;
+padding-bottom:200px;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+#card{
+width:22%;
+position:relative;
+background-color:white;
+margin:0.5%;
+border-radius:5px;
+transition: 1s;
+-webkit-transition:0.5s;
+cursor:pointer;
+    flex: 1 1 auto;
+}
+
+#card:hover{
+transform: scale(1.05);
+box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 1200px){
+#card{
+width:30%;
+margin:1.6%;
+}
+}
+
+@media screen and (max-width: 800px){
+#card{
+width:45%;
+margin:2.5%;
+}
+}
+
+@media screen and (max-width: 500px){
+#card{
+width:98%;
+margin:2%;
+}
+}
+
+.card_img{
+width:100%;
+position:relative;
+border: solid black 1px;
+background-size: cover;
+background-position:center center; 
+background-color: #20e6b3;
+transition:1s;
+-webkit-transition:1s;
+}
+
+.line{
+height:2px;
+width:84%;
+margin:auto;
+background-color: #8e11f3;
+}
+
+.title input{
+background: transparent;
+border:1px solid white;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+display:inline;
+font-family: lato;
+color: white;
+font-size:18px;
+line-height:90%;
+border-radius:30px;
+}
+
+.title textarea:focus, input:focus{
+    outline: none;
+}
+
+
+.zoomed{
+width:100%;
+}
+
+/*CONTACT TITLE*/
+.contact-title-box {
+    margin: 50px;
+    width: 400px;
+    height: 75px;
+    background-color: black;
+    outline: 1px solid white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+background-image: url("/assets/parallax-3.jpg");
+min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/*CONTACT FORM*/
+#contact {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: #1d1a47;
+    overflow: hidden;
+}
+
+.contact-wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    max-width: 800px;
+}
+
+.direct-contact-container {
+max-width: 400px;
+margin-top: 5px;
+position:relative;
+text-align: center;
+margin-left:auto;
+margin-right:auto;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+list-style-type: none;
+float: center;
+}
+
+.list-item {
+line-height: 4;
+color: #aaa;
+}
+
+.contact-text {
+font: 300 18px 'Lato', sans-serif;
+letter-spacing: 1.9px;
+color: #bbb;
+}
+
+.place {
+margin-left: 30px;
+}
+
+.phone {
+margin-left: 30px;
+}
+
+.gmail {
+margin-left: 30px;
+}
+
+.contact-text a {
+color: #bbb;
+text-decoration: none;
+transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+/* Copyright Tagline */
+#copyright-tagline {
+    font-size: 10pt;
+    font-family: monospace;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+.bgimg-1, .bgimg-2, .bgimg-3 {
+background-attachment: scroll;
+min-height: 400px;
+}
+}
