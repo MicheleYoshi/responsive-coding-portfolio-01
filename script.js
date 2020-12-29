@@ -220,10 +220,10 @@ class Loop {
         return word;
     }
     
-    show() {
+    show( ) {
         this.i = 0;
         const interval = setInterval(() => {
-        this.lines[this.i].show();
+        this.lines[this.i].show( );
         this.i += 1;
     
         if (this.i === this.lines.length) {
